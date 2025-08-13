@@ -79,5 +79,5 @@ The analysis helps in:
 ## 🛠 How to Run
 1. Clone this repository:
    ```bash
-   git clone https://github.com/username/Flight-Price-Prediction.git
+   git clone [https://github.com/username/Flight-Price-Prediction.git](https://github.com/subhiksha-kodi/EDA-and-FEATURE-ENGINEERING---FLIGHT-PRICE-PREDICTION)
    cd Flight-Price-Prediction
