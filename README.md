@@ -1,52 +1,31 @@
-Flight Price Prediction
-Project Overview
+✈️ Flight Price Prediction
 
-This project aims to develop a predictive model to estimate flight prices using historical flight data. By analyzing features such as journey date, airline, origin, destination, and other flight details, the model provides accurate price predictions to assist travelers and airlines in decision-making.
+📌 Overview
+This project focuses on forecasting flight ticket prices by analyzing historical flight data. It uses information like travel dates, airlines, routes, and flight durations to uncover pricing trends and deliver accurate predictions.
 
-Dataset Description
+📂 Datasets
+Two Excel files are included:
 
-Training Dataset (data_train): Contains historical flight records with actual prices. This dataset is used to train and validate the prediction model.
+data_train.xlsx – Historical flight details with prices, used for training the model.
 
-Test Dataset (test_set): Contains flight details without price information. The trained model will generate price predictions for this dataset.
+test_set.xlsx – Flight details without prices; the model predicts prices for these entries.
 
-Key Features
+Key features include:
+🗓️ Travel Date | 🛫 Departure & Arrival Times | 🌆 Origin & Destination | ⏳ Flight Duration | ✈️ Airline | 🔄 Stops | 💲 Ticket Price (training data only)
 
-The datasets typically include:
+🔍 Workflow Summary
 
-Date of Journey
+📥 Data Loading
+Imported datasets and inspected for missing or inconsistent data.
 
-Departure and Arrival Times
+🧹 Data Preparation
+Cleaned and transformed data, converting dates and categorical features for modeling.
 
-Source and Destination Cities
+⚙️ Feature Engineering
+Created additional features such as journey length and day of week to improve predictions.
 
-Flight Duration
+🤖 Model Development
+Built regression models to learn the relationship between flight attributes and prices.
 
-Number of Stops
-
-Airline
-
-Other relevant flight-related attributes
-
-How to Use
-
-Utilize the training dataset to preprocess data, engineer features, and train your machine learning model.
-
-Apply the trained model to the test dataset to predict flight prices for unseen flights.
-
-Project Structure
-
-data_train: Excel file containing the training data.
-
-test_set: Excel file containing the test data for prediction.
-
-Supporting scripts or notebooks for data processing, modeling, and evaluation.
-
-Requirements and Considerations
-
-Familiarity with data preprocessing and feature engineering for tabular data.
-
-Understanding of machine learning modeling and evaluation techniques.
-
-Handle missing data and categorical variables carefully to ensure model accuracy.
-
-Model performance depends on the quality of data and choice of algorithm.
+🎯 Price Prediction
+Used trained models to predict flight prices on the test dataset.
