@@ -1,31 +1,31 @@
-✈️ Flight Price Prediction
+#✈️ Flight Price Prediction
 
-📌 Overview
+##📌 Overview
 This project focuses on forecasting flight ticket prices by analyzing historical flight data. It uses information like travel dates, airlines, routes, and flight durations to uncover pricing trends and deliver accurate predictions.
 
-📂 Datasets
+##📂 Datasets
 Two Excel files are included:
 
 data_train.xlsx – Historical flight details with prices, used for training the model.
 
 test_set.xlsx – Flight details without prices; the model predicts prices for these entries.
 
-Key features include:
+##Key features include:
 🗓️ Travel Date | 🛫 Departure & Arrival Times | 🌆 Origin & Destination | ⏳ Flight Duration | ✈️ Airline | 🔄 Stops | 💲 Ticket Price (training data only)
 
-🔍 Workflow Summary
+##🔍 Workflow Summary
 
-📥 Data Loading
+##📥 Data Loading
 Imported datasets and inspected for missing or inconsistent data.
 
-🧹 Data Preparation
+##🧹 Data Preparation
 Cleaned and transformed data, converting dates and categorical features for modeling.
 
-⚙️ Feature Engineering
+##⚙️ Feature Engineering
 Created additional features such as journey length and day of week to improve predictions.
 
-🤖 Model Development
+##🤖 Model Development
 Built regression models to learn the relationship between flight attributes and prices.
 
-🎯 Price Prediction
+##🎯 Price Prediction
 Used trained models to predict flight prices on the test dataset.
