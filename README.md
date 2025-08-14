@@ -1,83 +1,52 @@
-# ✈ Flight Price Prediction – EDA & Feature Engineering
+Flight Price Prediction
+Project Overview
 
-## 📌 Overview
-This project aims to analyze and predict flight ticket prices based on various factors such as airline, source, destination, date of journey, and more.  
-We perform *Exploratory Data Analysis (EDA), **Feature Engineering, and **Preprocessing* to prepare the dataset for machine learning models.
+This project aims to develop a predictive model to estimate flight prices using historical flight data. By analyzing features such as journey date, airline, origin, destination, and other flight details, the model provides accurate price predictions to assist travelers and airlines in decision-making.
 
-The analysis helps in:
-- Understanding the factors affecting flight prices
-- Building a clean dataset ready for modeling
-- Identifying trends and patterns in ticket pricing
+Dataset Description
 
----
+Training Dataset (data_train): Contains historical flight records with actual prices. This dataset is used to train and validate the prediction model.
 
-## 📂 Dataset
-- *Source:* Publicly available dataset from Kaggle / other sources
-- *Key Columns:*
-  - Airline – Name of the airline
-  - Date_of_Journey – Date of flight
-  - Source & Destination – Airports
-  - Route – Flight path
-  - Dep_Time & Arrival_Time – Departure and arrival times
-  - Duration – Total travel time
-  - Total_Stops – Number of stops
-  - Price – Ticket price (Target variable)
+Test Dataset (test_set): Contains flight details without price information. The trained model will generate price predictions for this dataset.
 
----
+Key Features
 
-## 🔍 Steps Performed
+The datasets typically include:
 
-### 1. *Exploratory Data Analysis (EDA)*
-- Checked data types, null values, and duplicates
-- Visualized categorical and numerical features
-- Studied correlation between features and ticket prices
-- Identified outliers
+Date of Journey
 
-### 2. *Data Cleaning*
-- Handled missing values
-- Removed irrelevant features
-- Converted date/time columns into separate day, month, hour, and minute features
+Departure and Arrival Times
 
-### 3. *Feature Engineering*
-- Extracted *Journey Day* & *Month*
-- Converted *Duration* into minutes
-- Encoded categorical variables (OneHotEncoder, Label Encoding)
-- Handled ordinal features like Total_Stops
+Source and Destination Cities
 
-### 4. *Data Preprocessing*
-- Normalized numerical features
-- Created final dataset ready for machine learning
+Flight Duration
 
----
+Number of Stops
 
-## 📊 Tools & Libraries Used
-- *Python*
-- *Pandas* – Data manipulation
-- *NumPy* – Numerical computation
-- *Matplotlib* & *Seaborn* – Data visualization
-- *Scikit-learn* – Encoding & preprocessing
+Airline
 
----
+Other relevant flight-related attributes
 
-## 📈 Results
-- Clean, preprocessed dataset ready for modeling
-- Insights into flight price trends based on:
-  - Airlines
-  - Travel month
-  - Duration & Stops
-- Found strong influence of airline type and total stops on ticket price
+How to Use
 
----
+Utilize the training dataset to preprocess data, engineer features, and train your machine learning model.
 
-## 🚀 Future Scope
-- Implement multiple ML algorithms (Random Forest, XGBoost, etc.)
-- Hyperparameter tuning for better accuracy
-- Build a web app for live flight price prediction
+Apply the trained model to the test dataset to predict flight prices for unseen flights.
 
----
+Project Structure
 
-## 🛠 How to Run
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/username/Flight-Price-Prediction.git](https://github.com/subhiksha-kodi/EDA-and-FEATURE-ENGINEERING---FLIGHT-PRICE-PREDICTION)
-   cd Flight-Price-Prediction
+data_train: Excel file containing the training data.
+
+test_set: Excel file containing the test data for prediction.
+
+Supporting scripts or notebooks for data processing, modeling, and evaluation.
+
+Requirements and Considerations
+
+Familiarity with data preprocessing and feature engineering for tabular data.
+
+Understanding of machine learning modeling and evaluation techniques.
+
+Handle missing data and categorical variables carefully to ensure model accuracy.
+
+Model performance depends on the quality of data and choice of algorithm.
