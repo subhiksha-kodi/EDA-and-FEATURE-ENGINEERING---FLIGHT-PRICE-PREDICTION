@@ -1,31 +1,43 @@
-#✈️ Flight Price Prediction
+# 📦 **Product Data Analysis – Price & Weight Changes**
 
-##📌 Overview
-This project focuses on forecasting flight ticket prices by analyzing historical flight data. It uses information like travel dates, airlines, routes, and flight durations to uncover pricing trends and deliver accurate predictions.
+## 📌 **Overview**  
+This project analyzes a dataset of 100 products to study *price* and *weight changes* over time.  
+By comparing *before* and *after* values, we identify trends, calculate differences, and uncover patterns in product pricing and packaging.
 
-##📂 Datasets
-Two Excel files are included:
+---
 
-data_train.xlsx – Historical flight details with prices, used for training the model.
+## 📂 **Dataset**  
+*File:* product_100_rows.csv
 
-test_set.xlsx – Flight details without prices; the model predicts prices for these entries.
+*Columns:*  
+- Product – Name of the product  
+- Category – Product category (e.g., Electronics, Grocery)  
+- Price Before – Price before change  
+- Price After – Price after change  
+- Weight Before – Weight before change  
+- Weight After – Weight after change  
+- Date – Date of observation/change
 
-##Key features include:
-🗓️ Travel Date | 🛫 Departure & Arrival Times | 🌆 Origin & Destination | ⏳ Flight Duration | ✈️ Airline | 🔄 Stops | 💲 Ticket Price (training data only)
+---
 
-##🔍 Workflow Summary
+## 🔍 **Steps Performed**  
+1. *Data Loading & Inspection*  
+   - Read CSV file into Pandas DataFrame  
+   - Checked for missing values and duplicates  
 
-##📥 Data Loading
-Imported datasets and inspected for missing or inconsistent data.
+2. *Price Analysis*  
+   - Calculated absolute and percentage change in price  
+   - Identified products with price increases/decreases  
 
-##🧹 Data Preparation
-Cleaned and transformed data, converting dates and categorical features for modeling.
+3. *Weight Analysis*  
+   - Calculated change in weight  
+   - Flagged cases of *shrinkflation* (less weight, same/higher price)  
 
-##⚙️ Feature Engineering
-Created additional features such as journey length and day of week to improve predictions.
+4. *Category-wise Trends*  
+   - Grouped products by category  
+   - Found average change in price and weight per category  
 
-##🤖 Model Development
-Built regression models to learn the relationship between flight attributes and prices.
+5. *Date-based Trends*  
+   - Checked how changes varied over different dates
 
-##🎯 Price Prediction
-Used trained models to predict flight prices on the test dataset.
+---
